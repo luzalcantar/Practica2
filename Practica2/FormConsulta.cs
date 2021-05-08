@@ -27,11 +27,11 @@ namespace Practica2
             {
                 if (txtID.Text.All(Char.IsLetter))
                 {
-                    errorProvider1.SetError(txtID, "Ingresar solo numeros");
+                    errorProvider1.SetError(txtID, "Ingrese ID valido");
                 }
                 else
                 {
-                    errorProvider1.SetError(txtID, "Ingresar ID");
+                    errorProvider1.SetError(txtID, "Ingrese ID valido");
                 }
                 btnConsultar.Enabled = false;
                 txtID.Focus();
@@ -45,6 +45,17 @@ namespace Practica2
         private void FormID_Load(object sender, EventArgs e)
         {
             btnConsultar.Enabled = false;
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            using (FormResultado vResultado = new FormResultado(txtID.Text))
+                vResultado.ShowDialog();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -51,13 +51,16 @@ namespace Practica2
             // btnConsultar
             // 
             this.btnConsultar.AutoSize = true;
+            this.btnConsultar.BackColor = System.Drawing.Color.OliveDrab;
+            this.btnConsultar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnConsultar.Location = new System.Drawing.Point(243, 108);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
             this.btnConsultar.Size = new System.Drawing.Size(117, 50);
             this.btnConsultar.TabIndex = 1;
             this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // txtID
             // 
@@ -84,6 +87,7 @@ namespace Practica2
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FormConsulta
             // 
