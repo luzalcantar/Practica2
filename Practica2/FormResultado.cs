@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Practica2
 {
-    public partial class Form1 : Form
+    public partial class FormResultado : Form
     {
-        public Form1()
+        int id_distribuidor;
+        public FormResultado(string id)
         {
             InitializeComponent();
+            id_distribuidor = Int32.Parse(id);
+        }
+
+        private void FormResultado_Load(object sender, EventArgs e)
+        {
+            lbTitulo.Text += id_distribuidor;
         }
     }
 }
