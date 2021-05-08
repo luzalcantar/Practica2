@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace Practica2
 {
-    public partial class Form1 : Form
+    public partial class FormAdd : Form
     {
-        public Form1()
+        public FormAdd()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void btnConsulta_Click(object sender, EventArgs e)
         {
-
+            using (FormConsulta vConsulta = new FormConsulta())
+                vConsulta.ShowDialog();
         }
     }
 }

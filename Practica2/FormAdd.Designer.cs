@@ -1,7 +1,7 @@
 ﻿
 namespace Practica2
 {
-    partial class Form1
+    partial class FormAdd
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,45 +29,48 @@ namespace Practica2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdd));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.splitter2 = new System.Windows.Forms.Splitter();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.splitter3 = new System.Windows.Forms.Splitter();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.splitter4 = new System.Windows.Forms.Splitter();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtApellidoP = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.splitter5 = new System.Windows.Forms.Splitter();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtApellidoM = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.splitter6 = new System.Windows.Forms.Splitter();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtCalle = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.splitter7 = new System.Windows.Forms.Splitter();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtNo = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.splitter8 = new System.Windows.Forms.Splitter();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtColonia = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
@@ -80,6 +83,7 @@ namespace Practica2
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel11.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -94,10 +98,10 @@ namespace Practica2
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel10);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel12);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 30);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(474, 423);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(474, 386);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // flowLayoutPanel2
@@ -107,7 +111,7 @@ namespace Practica2
             this.flowLayoutPanel2.AutoSize = true;
             this.flowLayoutPanel2.Controls.Add(this.label2);
             this.flowLayoutPanel2.Controls.Add(this.splitter1);
-            this.flowLayoutPanel2.Controls.Add(this.textBox1);
+            this.flowLayoutPanel2.Controls.Add(this.txtID);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(8, 5);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -132,14 +136,14 @@ namespace Practica2
             this.splitter1.TabIndex = 3;
             this.splitter1.TabStop = false;
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(170, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(70, 27);
-            this.textBox1.TabIndex = 1;
+            this.txtID.Location = new System.Drawing.Point(170, 8);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(70, 27);
+            this.txtID.TabIndex = 1;
             // 
             // flowLayoutPanel4
             // 
@@ -148,7 +152,7 @@ namespace Practica2
             this.flowLayoutPanel4.AutoSize = true;
             this.flowLayoutPanel4.Controls.Add(this.label3);
             this.flowLayoutPanel4.Controls.Add(this.splitter2);
-            this.flowLayoutPanel4.Controls.Add(this.textBox2);
+            this.flowLayoutPanel4.Controls.Add(this.txtFecha);
             this.flowLayoutPanel4.Location = new System.Drawing.Point(8, 48);
             this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
@@ -173,14 +177,14 @@ namespace Practica2
             this.splitter2.TabIndex = 3;
             this.splitter2.TabStop = false;
             // 
-            // textBox2
+            // txtFecha
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtFecha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(170, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 27);
-            this.textBox2.TabIndex = 2;
+            this.txtFecha.Location = new System.Drawing.Point(170, 8);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(277, 27);
+            this.txtFecha.TabIndex = 2;
             // 
             // flowLayoutPanel5
             // 
@@ -189,7 +193,7 @@ namespace Practica2
             this.flowLayoutPanel5.AutoSize = true;
             this.flowLayoutPanel5.Controls.Add(this.label4);
             this.flowLayoutPanel5.Controls.Add(this.splitter3);
-            this.flowLayoutPanel5.Controls.Add(this.textBox3);
+            this.flowLayoutPanel5.Controls.Add(this.txtNombre);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(8, 91);
             this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
@@ -205,7 +209,6 @@ namespace Practica2
             this.label4.Size = new System.Drawing.Size(71, 19);
             this.label4.TabIndex = 1;
             this.label4.Text = "Nombre: ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // splitter3
             // 
@@ -215,14 +218,14 @@ namespace Practica2
             this.splitter3.TabIndex = 3;
             this.splitter3.TabStop = false;
             // 
-            // textBox3
+            // txtNombre
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(170, 8);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 27);
-            this.textBox3.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(170, 8);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(277, 27);
+            this.txtNombre.TabIndex = 3;
             // 
             // flowLayoutPanel6
             // 
@@ -231,7 +234,7 @@ namespace Practica2
             this.flowLayoutPanel6.AutoSize = true;
             this.flowLayoutPanel6.Controls.Add(this.label5);
             this.flowLayoutPanel6.Controls.Add(this.splitter4);
-            this.flowLayoutPanel6.Controls.Add(this.textBox4);
+            this.flowLayoutPanel6.Controls.Add(this.txtApellidoP);
             this.flowLayoutPanel6.Location = new System.Drawing.Point(8, 134);
             this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
@@ -256,14 +259,14 @@ namespace Practica2
             this.splitter4.TabIndex = 3;
             this.splitter4.TabStop = false;
             // 
-            // textBox4
+            // txtApellidoP
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtApellidoP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(170, 8);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(277, 27);
-            this.textBox4.TabIndex = 4;
+            this.txtApellidoP.Location = new System.Drawing.Point(170, 8);
+            this.txtApellidoP.Name = "txtApellidoP";
+            this.txtApellidoP.Size = new System.Drawing.Size(277, 27);
+            this.txtApellidoP.TabIndex = 4;
             // 
             // flowLayoutPanel7
             // 
@@ -272,7 +275,7 @@ namespace Practica2
             this.flowLayoutPanel7.AutoSize = true;
             this.flowLayoutPanel7.Controls.Add(this.label6);
             this.flowLayoutPanel7.Controls.Add(this.splitter5);
-            this.flowLayoutPanel7.Controls.Add(this.textBox5);
+            this.flowLayoutPanel7.Controls.Add(this.txtApellidoM);
             this.flowLayoutPanel7.Location = new System.Drawing.Point(8, 177);
             this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
@@ -297,14 +300,14 @@ namespace Practica2
             this.splitter5.TabIndex = 3;
             this.splitter5.TabStop = false;
             // 
-            // textBox5
+            // txtApellidoM
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtApellidoM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(170, 8);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(277, 27);
-            this.textBox5.TabIndex = 5;
+            this.txtApellidoM.Location = new System.Drawing.Point(170, 8);
+            this.txtApellidoM.Name = "txtApellidoM";
+            this.txtApellidoM.Size = new System.Drawing.Size(277, 27);
+            this.txtApellidoM.TabIndex = 5;
             // 
             // flowLayoutPanel8
             // 
@@ -313,7 +316,7 @@ namespace Practica2
             this.flowLayoutPanel8.AutoSize = true;
             this.flowLayoutPanel8.Controls.Add(this.label7);
             this.flowLayoutPanel8.Controls.Add(this.splitter6);
-            this.flowLayoutPanel8.Controls.Add(this.textBox6);
+            this.flowLayoutPanel8.Controls.Add(this.txtCalle);
             this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 0);
             this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
@@ -338,14 +341,14 @@ namespace Practica2
             this.splitter6.TabIndex = 3;
             this.splitter6.TabStop = false;
             // 
-            // textBox6
+            // txtCalle
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCalle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Location = new System.Drawing.Point(87, 8);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(181, 27);
-            this.textBox6.TabIndex = 6;
+            this.txtCalle.Location = new System.Drawing.Point(87, 8);
+            this.txtCalle.Name = "txtCalle";
+            this.txtCalle.Size = new System.Drawing.Size(181, 27);
+            this.txtCalle.TabIndex = 6;
             // 
             // flowLayoutPanel9
             // 
@@ -354,7 +357,7 @@ namespace Practica2
             this.flowLayoutPanel9.AutoSize = true;
             this.flowLayoutPanel9.Controls.Add(this.label8);
             this.flowLayoutPanel9.Controls.Add(this.splitter7);
-            this.flowLayoutPanel9.Controls.Add(this.textBox7);
+            this.flowLayoutPanel9.Controls.Add(this.txtNo);
             this.flowLayoutPanel9.Location = new System.Drawing.Point(285, 0);
             this.flowLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel9.Name = "flowLayoutPanel9";
@@ -379,14 +382,14 @@ namespace Practica2
             this.splitter7.TabIndex = 3;
             this.splitter7.TabStop = false;
             // 
-            // textBox7
+            // txtNo
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(91, 8);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(71, 27);
-            this.textBox7.TabIndex = 7;
+            this.txtNo.Location = new System.Drawing.Point(91, 8);
+            this.txtNo.Name = "txtNo";
+            this.txtNo.Size = new System.Drawing.Size(71, 27);
+            this.txtNo.TabIndex = 7;
             // 
             // flowLayoutPanel10
             // 
@@ -395,7 +398,7 @@ namespace Practica2
             this.flowLayoutPanel10.AutoSize = true;
             this.flowLayoutPanel10.Controls.Add(this.label9);
             this.flowLayoutPanel10.Controls.Add(this.splitter8);
-            this.flowLayoutPanel10.Controls.Add(this.textBox8);
+            this.flowLayoutPanel10.Controls.Add(this.txtColonia);
             this.flowLayoutPanel10.Location = new System.Drawing.Point(8, 269);
             this.flowLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel10.Name = "flowLayoutPanel10";
@@ -420,22 +423,22 @@ namespace Practica2
             this.splitter8.TabIndex = 3;
             this.splitter8.TabStop = false;
             // 
-            // textBox8
+            // txtColonia
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtColonia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(90, 8);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(357, 27);
-            this.textBox8.TabIndex = 8;
+            this.txtColonia.Location = new System.Drawing.Point(90, 8);
+            this.txtColonia.Name = "txtColonia";
+            this.txtColonia.Size = new System.Drawing.Size(357, 27);
+            this.txtColonia.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 27);
+            this.label1.Size = new System.Drawing.Size(182, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Distribuidor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -448,7 +451,7 @@ namespace Practica2
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(486, 456);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(486, 435);
             this.flowLayoutPanel3.TabIndex = 1;
             // 
             // flowLayoutPanel11
@@ -463,46 +466,55 @@ namespace Practica2
             // 
             // flowLayoutPanel12
             // 
-            this.flowLayoutPanel12.Controls.Add(this.button1);
-            this.flowLayoutPanel12.Controls.Add(this.button2);
+            this.flowLayoutPanel12.Controls.Add(this.btnGuardar);
+            this.flowLayoutPanel12.Controls.Add(this.btnConsulta);
             this.flowLayoutPanel12.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel12.Location = new System.Drawing.Point(8, 315);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
-            this.flowLayoutPanel12.Size = new System.Drawing.Size(458, 100);
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(458, 63);
             this.flowLayoutPanel12.TabIndex = 2;
             // 
-            // button1
+            // btnGuardar
             // 
-            this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(353, 3);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
-            this.button1.Size = new System.Drawing.Size(102, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuardar.AutoSize = true;
+            this.btnGuardar.Location = new System.Drawing.Point(353, 3);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
+            this.btnGuardar.Size = new System.Drawing.Size(102, 49);
+            this.btnGuardar.TabIndex = 0;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnConsulta
             // 
-            this.button2.AutoSize = true;
-            this.button2.Location = new System.Drawing.Point(236, 3);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
-            this.button2.Size = new System.Drawing.Size(111, 49);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Consultar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnConsulta.AutoSize = true;
+            this.btnConsulta.Location = new System.Drawing.Point(236, 3);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
+            this.btnConsulta.Size = new System.Drawing.Size(111, 49);
+            this.btnConsulta.TabIndex = 1;
+            this.btnConsulta.Text = "Consultar";
+            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
-            // Form1
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 658);
+            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.ClientSize = new System.Drawing.Size(502, 454);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Text = "Distribuidores";
+            this.MaximizeBox = false;
+            this.Name = "FormAdd";
+            this.Text = "Agregar Distribuidor";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -527,6 +539,7 @@ namespace Practica2
             this.flowLayoutPanel11.PerformLayout();
             this.flowLayoutPanel12.ResumeLayout(false);
             this.flowLayoutPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -538,41 +551,42 @@ namespace Practica2
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Splitter splitter2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Splitter splitter3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Splitter splitter4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtApellidoP;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Splitter splitter5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtApellidoM;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Splitter splitter6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtCalle;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Splitter splitter7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtNo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Splitter splitter8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtColonia;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnConsulta;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
