@@ -36,18 +36,20 @@ namespace Practica2
             // lbTitulo
             // 
             this.lbTitulo.AutoSize = true;
+            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitulo.Location = new System.Drawing.Point(13, 9);
             this.lbTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(206, 21);
+            this.lbTitulo.Size = new System.Drawing.Size(350, 31);
             this.lbTitulo.TabIndex = 0;
-            this.lbTitulo.Text = "Informacion del Distribuidor";
+            this.lbTitulo.Text = "Informacion del Distribuidor ";
             // 
             // FormResultado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 230);
+            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.ClientSize = new System.Drawing.Size(598, 227);
             this.Controls.Add(this.lbTitulo);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

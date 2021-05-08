@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Practica2
@@ -16,6 +10,8 @@ namespace Practica2
         {
             InitializeComponent();
         }
+
+        //Funcion para validar si el ID es numerico
         private void validarID()
         {
             if (txtID.Text.Trim() != string.Empty && !txtID.Text.All(Char.IsLetter))
