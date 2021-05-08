@@ -185,7 +185,7 @@ namespace Practica2
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(277, 27);
             this.txtFecha.TabIndex = 4;
-            this.txtFecha.Value = new System.DateTime(2021, 5, 14, 0, 0, 0, 0);
+            this.txtFecha.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
             // 
             // flowLayoutPanel5
             // 
