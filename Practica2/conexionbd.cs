@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Practica2
@@ -12,25 +13,19 @@ namespace Practica2
 
         public conexionbd()
         {
-            string cadena = "server=localhost; port=3306; user id=root; password=root; database=practica2";
+            string servidor = "localhost";
+            string port = "3306";
+            string usuario = "root";
+            string password = "root";
+            string database = "practica2"; 
+
+            string cadena = "server="+servidor+"; port="+port+"; user id="+ usuario + "; password="+password+"; database="+database+"";
 
             con = new MySqlConnection(cadena);
 
-            //string datos = "";
             try
             {
                 con.Open();
-                //MessageBox.Show("Conectado");
-                //MySqlDataReader reader = null;
-
-                //MySqlCommand cmd = new MySqlCommand("Select * from persons;", conexionBD);
-
-                //reader = cmd.ExecuteReader();
-
-                //while (reader.Read())
-                //{
-                //    datos += reader.GetString(0) + "/n";
-                //}
             }
             catch (MySqlException e)
             {
@@ -79,6 +74,20 @@ namespace Practica2
                 MessageBox.Show("No se pudo realizar la consulta: " +e.ToString()) ;
             }
             return contador;
+        }
+        public DataTable consultarID(string id)
+        {
+            DataTable tabla = new DataTable();
+            try {
+                cmd = new MySqlCommand("call obtenerDatos('" + id.ToString() + "');", con);
+                MySqlDataAdapter datos = new MySqlDataAdapter(cmd);
+                datos.Fill(tabla);
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("No se pudo realizar la consulta: " + e.ToString());
+            }
+            return tabla;
         }
     }
 }

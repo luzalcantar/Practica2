@@ -6,29 +6,25 @@ namespace Practica2
 {
     public partial class FormConsulta : Form
     {
+        conexionbd c = new conexionbd();
+
         public FormConsulta()
         {
             InitializeComponent();
         }
 
-        //Funcion para validar si el ID es numerico
+        //Funcion para validar Si el Id es Valido
         private void validarID()
         {
-            if (txtID.Text.Trim() != string.Empty && !txtID.Text.All(Char.IsLetter))
+            if (txtID.Text.Trim() != string.Empty)
             {
                 btnConsultar.Enabled = true;
                 errorProvider1.SetError(txtID, "");
             }
             else
             {
-                if (txtID.Text.All(Char.IsLetter))
-                {
-                    errorProvider1.SetError(txtID, "Ingrese ID valido");
-                }
-                else
-                {
-                    errorProvider1.SetError(txtID, "Ingrese ID valido");
-                }
+                errorProvider1.SetError(txtID, "Ingrese ID valido");
+               
                 btnConsultar.Enabled = false;
                 txtID.Focus();
             }
@@ -45,8 +41,16 @@ namespace Practica2
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            using (FormResultado vResultado = new FormResultado(txtID.Text))
-                vResultado.ShowDialog();
+            if (c.validarID(txtID.Text) > 0)
+            {
+                using (FormResultado vResultado = new FormResultado(txtID.Text))
+                    vResultado.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Distribuidor no existente");
+            }
+                
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

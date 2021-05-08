@@ -12,16 +12,25 @@ namespace Practica2
 {
     public partial class FormResultado : Form
     {
-        int id_distribuidor;
+        string id_distribuidor;
+        conexionbd c = new conexionbd();
+
         public FormResultado(string id)
         {
             InitializeComponent();
-            id_distribuidor = Int32.Parse(id);
+            id_distribuidor = id;
         }
 
         private void FormResultado_Load(object sender, EventArgs e)
         {
             lbTitulo.Text += id_distribuidor;
+
+            dgvDistribuidor.DataSource = c.consultarID(id_distribuidor);
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
