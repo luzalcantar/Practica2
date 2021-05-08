@@ -12,11 +12,15 @@ namespace Practica2
 {
     public partial class FormAdd : Form
     {
+        conexionbd c = new conexionbd();
         public FormAdd()
         {
             InitializeComponent();
         }
-
+        private void FormAdd_Load(object sender, EventArgs e)
+        {
+            
+        }
         private void btnConsulta_Click(object sender, EventArgs e)
         {
             using (FormConsulta vConsulta = new FormConsulta())
@@ -51,16 +55,27 @@ namespace Practica2
             {
                 errorProvider1.SetError(lbDistribidor, "");
 
-                txtID.Text = "";
-                txtFecha.Text = "";
-                txtNombre.Text = "";
-                txtApellidoP.Text = "";
-                txtApellidoM.Text = "";
-                txtCalle.Text = "";
-                txtNo.Text = "";
-                txtColonia.Text = "";
-            }
-        }
+                if (c.validarID(txtID.Text) == 0)
+                {
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+                    MessageBox.Show(c.Insertar(txtID.Text, txtFecha.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtCalle.Text, txtNo.Text, txtColonia.Text), "Mensaje", buttons); ;
+                
+                    //Limpiar textbox de formulario
+                    txtID.Text = "";
+                    txtFecha.Text = "";
+                    txtNombre.Text = "";
+                    txtApellidoP.Text = "";
+                    txtApellidoM.Text = "";
+                    txtCalle.Text = "";
+                    txtNo.Text = "";
+                    txtColonia.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Id de Usuario Existente");
 
+                }  
+            }
+        }  
     }
 }

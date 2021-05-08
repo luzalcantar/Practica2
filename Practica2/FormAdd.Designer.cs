@@ -39,6 +39,7 @@ namespace Practica2
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.splitter2 = new System.Windows.Forms.Splitter();
+            this.txtFecha = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.splitter3 = new System.Windows.Forms.Splitter();
@@ -70,7 +71,6 @@ namespace Practica2
             this.lbDistribidor = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtFecha = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
@@ -101,7 +101,7 @@ namespace Practica2
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(474, 379);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(474, 386);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // flowLayoutPanel2
@@ -157,7 +157,7 @@ namespace Practica2
             this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(458, 36);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(458, 43);
             this.flowLayoutPanel4.TabIndex = 1;
             // 
             // label3
@@ -173,9 +173,19 @@ namespace Practica2
             // 
             this.splitter2.Location = new System.Drawing.Point(140, 8);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(24, 20);
+            this.splitter2.Size = new System.Drawing.Size(24, 27);
             this.splitter2.TabIndex = 3;
             this.splitter2.TabStop = false;
+            // 
+            // txtFecha
+            // 
+            this.txtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha.Location = new System.Drawing.Point(170, 8);
+            this.txtFecha.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(277, 27);
+            this.txtFecha.TabIndex = 4;
+            this.txtFecha.Value = new System.DateTime(2021, 5, 14, 0, 0, 0, 0);
             // 
             // flowLayoutPanel5
             // 
@@ -185,7 +195,7 @@ namespace Practica2
             this.flowLayoutPanel5.Controls.Add(this.label4);
             this.flowLayoutPanel5.Controls.Add(this.splitter3);
             this.flowLayoutPanel5.Controls.Add(this.txtNombre);
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(8, 84);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(8, 91);
             this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Padding = new System.Windows.Forms.Padding(5);
@@ -226,7 +236,7 @@ namespace Practica2
             this.flowLayoutPanel6.Controls.Add(this.label5);
             this.flowLayoutPanel6.Controls.Add(this.splitter4);
             this.flowLayoutPanel6.Controls.Add(this.txtApellidoP);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(8, 127);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(8, 134);
             this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Padding = new System.Windows.Forms.Padding(5);
@@ -267,7 +277,7 @@ namespace Practica2
             this.flowLayoutPanel7.Controls.Add(this.label6);
             this.flowLayoutPanel7.Controls.Add(this.splitter5);
             this.flowLayoutPanel7.Controls.Add(this.txtApellidoM);
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(8, 170);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(8, 177);
             this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Padding = new System.Windows.Forms.Padding(5);
@@ -305,7 +315,7 @@ namespace Practica2
             this.flowLayoutPanel11.AutoSize = true;
             this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel8);
             this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel9);
-            this.flowLayoutPanel11.Location = new System.Drawing.Point(8, 216);
+            this.flowLayoutPanel11.Location = new System.Drawing.Point(8, 223);
             this.flowLayoutPanel11.Name = "flowLayoutPanel11";
             this.flowLayoutPanel11.Size = new System.Drawing.Size(458, 43);
             this.flowLayoutPanel11.TabIndex = 1;
@@ -400,7 +410,7 @@ namespace Practica2
             this.flowLayoutPanel10.Controls.Add(this.label9);
             this.flowLayoutPanel10.Controls.Add(this.splitter8);
             this.flowLayoutPanel10.Controls.Add(this.txtColonia);
-            this.flowLayoutPanel10.Location = new System.Drawing.Point(8, 262);
+            this.flowLayoutPanel10.Location = new System.Drawing.Point(8, 269);
             this.flowLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.flowLayoutPanel10.Name = "flowLayoutPanel10";
             this.flowLayoutPanel10.Padding = new System.Windows.Forms.Padding(5);
@@ -438,7 +448,7 @@ namespace Practica2
             this.flowLayoutPanel12.Controls.Add(this.btnGuardar);
             this.flowLayoutPanel12.Controls.Add(this.btnConsulta);
             this.flowLayoutPanel12.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel12.Location = new System.Drawing.Point(8, 308);
+            this.flowLayoutPanel12.Location = new System.Drawing.Point(8, 315);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
             this.flowLayoutPanel12.Size = new System.Drawing.Size(458, 63);
             this.flowLayoutPanel12.TabIndex = 2;
@@ -497,13 +507,6 @@ namespace Practica2
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(170, 8);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(277, 27);
-            this.txtFecha.TabIndex = 4;
-            // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -518,6 +521,7 @@ namespace Practica2
             this.MaximizeBox = false;
             this.Name = "FormAdd";
             this.Text = "Agregar Distribuidor";
+            this.Load += new System.EventHandler(this.FormAdd_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
